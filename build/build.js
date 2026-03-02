@@ -952,8 +952,131 @@ function buildAffiliatePage(opts) {
   return html;
 }
 
+function renderGuideContent(blocks) {
+  return blocks.map(block => {
+    switch (block.type) {
+      case 'h2':
+        return `<h2>${escapeHtml(block.text)}</h2>`;
+      case 'h3':
+        return `<h3>${escapeHtml(block.text)}</h3>`;
+      case 'p':
+        return `<p>${escapeHtml(block.text)}</p>`;
+      case 'ul':
+        return `<ul>${block.items.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`;
+      case 'ol':
+        return `<ol>${block.items.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ol>`;
+      case 'table':
+        return `<div class="table-container" style="margin:16px 0 24px;"><table class="comparison-table"><thead><tr>${block.headers.map(h => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${block.rows.map(row => `<tr>${row.map(cell => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+      case 'score-cards':
+        return `<div class="score-range-grid">
+        <div class="score-card excellent"><div class="score-range">750 – 900</div><div class="score-label">Excellent</div><div class="score-impact">Best rates &amp; instant approval</div></div>
+        <div class="score-card good"><div class="score-range">700 – 749</div><div class="score-label">Good</div><div class="score-impact">Standard rates, easy approval</div></div>
+        <div class="score-card fair"><div class="score-range">600 – 699</div><div class="score-label">Fair</div><div class="score-impact">Higher rates, limited options</div></div>
+        <div class="score-card poor"><div class="score-range">300 – 599</div><div class="score-label">Poor</div><div class="score-impact">Difficult to get approval</div></div>
+    </div>`;
+      default:
+        return '';
+    }
+  }).join('\n    ');
+}
+
 function generateAffiliatePage(pageData) {
   const { slug, title, description, keywords, heroTitle, heroSub, loanType, sortBy, topPicks, editorNotes, badges, ctaText, faqs, contentType } = pageData;
+
+  // --- Guide content pages (no bank comparison tables) ---
+  if (contentType === 'guide') {
+    const guideBlocks = pageData.guideContent || [];
+    const ctaLabel = pageData.ctaLabel || 'Check Eligibility';
+    const ctaUrl = pageData.ctaUrl || '/';
+
+    const content = `
+<section class="page-hero">
+    <h1><span class="hl">${escapeHtml(heroTitle)}</span></h1>
+    <p>${escapeHtml(heroSub)}</p>
+    <div class="updated">Updated: ${new Date().toLocaleString('en-IN', { month: 'long', year: 'numeric' })}</div>
+</section>
+
+<!-- Ad: Below Hero -->
+<div style="max-width:800px;margin:0 auto 24px;padding:0 24px;text-align:center;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8235932614579966" data-ad-slot="auto" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<section class="info-section">
+    ${renderGuideContent(guideBlocks)}
+</section>
+
+<section class="calc-cta">
+    <div class="calc-cta-box">
+        <h3>${escapeHtml(ctaLabel)}</h3>
+        <p>Use our free calculator to check your eligibility based on your income, existing EMIs, and credit profile.</p>
+        <a href="${ctaUrl}" class="calc-cta-btn">${escapeHtml(ctaLabel)} \u2192</a>
+    </div>
+</section>`;
+
+    // --- Internal links ---
+    const otherAffiliateLinks = affiliateData.pages
+      .filter(p => p.slug !== slug)
+      .map(p => ({
+        url: `/${p.slug}`,
+        label: p.heroTitle,
+        sub: p.loanType ? (LOAN_TYPES[p.loanType] ? LOAN_TYPES[p.loanType].label : '') : 'Guide',
+      }));
+
+    const loanTypeLinks = Object.keys(LOAN_TYPES).map(lt2 => ({
+      url: `/${lt2}-eligibility`,
+      label: `${LOAN_TYPES[lt2].label} Eligibility`,
+    }));
+
+    const links =
+      linksGridHTML('More Guides & Comparisons', otherAffiliateLinks) +
+      linksGridHTML('Eligibility Calculators', loanTypeLinks);
+
+    // --- FAQ ---
+    const faqItems = faqs.map(f => `
+    <div class="faq-item">
+        <h3>${escapeHtml(f.q)}</h3>
+        <p>${escapeHtml(f.a)}</p>
+    </div>`).join('');
+
+    const faqSection = `
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    ${faqItems}
+</section>`;
+
+    // --- Disclaimer ---
+    const disclaimer = `
+<div class="disclaimer">
+    <div class="disclaimer-box">
+        <strong>Disclaimer:</strong> The information provided on this page is for general guidance only. Eligibility criteria, interest rates, and policies vary across banks and may change without notice. We recommend verifying details directly with the respective bank or NBFC. We may earn a referral commission when you apply through links on this page, at no extra cost to you. Last updated: ${new Date().toLocaleString('en-IN', { month: 'long', year: 'numeric' })}.
+    </div>
+</div>`;
+
+    // --- Breadcrumbs ---
+    const bcItems = [
+      { name: 'Home', url: '/' },
+      { name: heroTitle },
+    ];
+
+    const html = buildAffiliatePage({
+      title,
+      description,
+      keywords,
+      canonicalPath: slug,
+      breadcrumb: breadcrumbHTML(bcItems),
+      breadcrumbItems: bcItems,
+      content,
+      faqSection,
+      linksSection: links,
+      disclaimer,
+      jsonLd: faqSchemaJSON(faqs),
+    });
+
+    return { slug, html };
+  }
+
+  // --- Standard affiliate/comparison pages ---
   const lt = LOAN_TYPES[loanType];
 
   // Get banks with this loan type, sorted appropriately
