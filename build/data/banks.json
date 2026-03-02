@@ -1,0 +1,6803 @@
+[
+  {
+    "slug": "sbi",
+    "name": "SBI",
+    "fullName": "State Bank of India",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.5,
+        "rateRange": "8.50 - 9.85",
+        "maxTenure": 30,
+        "maxAmount": 100000000,
+        "processingFee": "0.35% of loan amount + GST (min ₹2,000, max ₹10,000)",
+        "prepayment": "Nil for floating rate loans",
+        "minAmount": 500000,
+        "foir": 0.52,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.85,
+        "rateRange": "8.85 - 9.55",
+        "maxTenure": 7,
+        "maxAmount": 10000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 100000,
+        "foir": 0.57,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 11.15,
+        "rateRange": "11.15 - 14.30",
+        "maxTenure": 6,
+        "maxAmount": 2000000,
+        "processingFee": "1.50% of loan amount + GST",
+        "prepayment": "3% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.47,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use",
+          "Government-backed institution"
+        ]
+      },
+      "education-loan": {
+        "rate": 8.15,
+        "rateRange": "8.15 - 10.70",
+        "maxTenure": 15,
+        "maxAmount": 15000000,
+        "processingFee": "Nil",
+        "prepayment": "Nil",
+        "minAmount": 50000,
+        "foir": 0.52,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 11,
+        "rateRange": "11.00 - 14.75",
+        "maxTenure": 5,
+        "maxAmount": 50000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "2% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.42,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options",
+          "Government-backed institution"
+        ]
+      },
+      "gold-loan": {
+        "rate": 7.5,
+        "rateRange": "7.50 - 9.50",
+        "maxTenure": 3,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.62,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 12.5,
+        "rateRange": "12.50 - 15.64",
+        "maxTenure": 5,
+        "maxAmount": 300000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "Nil after 3 months",
+        "minAmount": 25000,
+        "foir": 0.57,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 8.7,
+        "rateRange": "8.70 - 10.90",
+        "maxTenure": 15,
+        "maxAmount": 75000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.52,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "hdfc-bank",
+    "name": "HDFC Bank",
+    "fullName": "HDFC Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.75,
+        "rateRange": "8.75 - 9.95",
+        "maxTenure": 30,
+        "maxAmount": 100000000,
+        "processingFee": "0.50% of loan amount (max ₹10,000)",
+        "prepayment": "Nil for floating rate loans",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.75,
+        "rateRange": "8.75 - 9.50",
+        "maxTenure": 7,
+        "maxAmount": 10000000,
+        "processingFee": "0.50% of loan amount",
+        "prepayment": "Part prepayment allowed after 12 months",
+        "minAmount": 100000,
+        "foir": 0.55,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.5,
+        "rateRange": "10.50 - 21.00",
+        "maxTenure": 5,
+        "maxAmount": 4000000,
+        "processingFee": "Up to 2.50% of loan amount",
+        "prepayment": "4% of outstanding",
+        "minAmount": 50000,
+        "foir": 0.45,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 725,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "education-loan": {
+        "rate": 9,
+        "rateRange": "9.00 - 13.68",
+        "maxTenure": 15,
+        "maxAmount": 10000000,
+        "processingFee": "Up to 1.50% + GST",
+        "prepayment": "Nil for education loans",
+        "minAmount": 100000,
+        "foir": 0.5,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 11.5,
+        "rateRange": "11.50 - 18.00",
+        "maxTenure": 5,
+        "maxAmount": 50000000,
+        "processingFee": "Up to 2% of loan amount",
+        "prepayment": "4% of outstanding",
+        "minAmount": 200000,
+        "foir": 0.4,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 8.5,
+        "rateRange": "8.50 - 16.50",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 25000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 600,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 13,
+        "rateRange": "13.00 - 17.50",
+        "maxTenure": 5,
+        "maxAmount": 500000,
+        "processingFee": "2.50% of loan amount",
+        "prepayment": "Part prepayment after 6 months",
+        "minAmount": 25000,
+        "foir": 0.55,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9,
+        "rateRange": "9.00 - 11.50",
+        "maxTenure": 15,
+        "maxAmount": 50000000,
+        "processingFee": "1% of loan amount",
+        "prepayment": "2% if prepaid within 2 years, nil after",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "icici-bank",
+    "name": "ICICI Bank",
+    "fullName": "ICICI Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.75,
+        "rateRange": "8.75 - 10.05",
+        "maxTenure": 30,
+        "maxAmount": 100000000,
+        "processingFee": "0.50% of loan amount + GST (max ₹10,000)",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.75,
+        "rateRange": "8.75 - 9.60",
+        "maxTenure": 7,
+        "maxAmount": 10000000,
+        "processingFee": "0.50% of loan amount",
+        "prepayment": "Part prepayment up to 25% annually",
+        "minAmount": 100000,
+        "foir": 0.55,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.75,
+        "rateRange": "10.75 - 19.00",
+        "maxTenure": 5,
+        "maxAmount": 5000000,
+        "processingFee": "Up to 2.50% of loan amount",
+        "prepayment": "5% of outstanding",
+        "minAmount": 50000,
+        "foir": 0.45,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 725,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "education-loan": {
+        "rate": 9.25,
+        "rateRange": "9.25 - 13.00",
+        "maxTenure": 12,
+        "maxAmount": 10000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 100000,
+        "foir": 0.5,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 13.5,
+        "rateRange": "13.50 - 19.00",
+        "maxTenure": 5,
+        "maxAmount": 40000000,
+        "processingFee": "Up to 2.50%",
+        "prepayment": "4% of outstanding",
+        "minAmount": 300000,
+        "foir": 0.4,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 10,
+        "rateRange": "10.00 - 16.00",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 600,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 14,
+        "rateRange": "14.00 - 18.00",
+        "maxTenure": 4,
+        "maxAmount": 400000,
+        "processingFee": "2% of loan amount",
+        "prepayment": "Part prepayment after 6 months",
+        "minAmount": 25000,
+        "foir": 0.55,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.2,
+        "rateRange": "9.20 - 11.75",
+        "maxTenure": 15,
+        "maxAmount": 50000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "axis-bank",
+    "name": "Axis Bank",
+    "fullName": "Axis Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.75,
+        "rateRange": "8.75 - 13.30",
+        "maxTenure": 30,
+        "maxAmount": 50000000,
+        "processingFee": "Up to 1% of loan amount",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.7,
+        "rateRange": "8.70 - 12.50",
+        "maxTenure": 7,
+        "maxAmount": 10000000,
+        "processingFee": "0.50% of loan amount",
+        "prepayment": "5% of outstanding principal",
+        "minAmount": 100000,
+        "foir": 0.55,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.49,
+        "rateRange": "10.49 - 22.00",
+        "maxTenure": 5,
+        "maxAmount": 4000000,
+        "processingFee": "Up to 2%",
+        "prepayment": "5% of outstanding",
+        "minAmount": 50000,
+        "foir": 0.45,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 725,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "education-loan": {
+        "rate": 9.7,
+        "rateRange": "9.70 - 13.70",
+        "maxTenure": 15,
+        "maxAmount": 7500000,
+        "processingFee": "Nil",
+        "prepayment": "Nil",
+        "minAmount": 50000,
+        "foir": 0.5,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 14.25,
+        "rateRange": "14.25 - 19.20",
+        "maxTenure": 5,
+        "maxAmount": 50000000,
+        "processingFee": "2% of loan amount",
+        "prepayment": "4% of outstanding",
+        "minAmount": 200000,
+        "foir": 0.4,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 9.75,
+        "rateRange": "9.75 - 17.00",
+        "maxTenure": 2,
+        "maxAmount": 2500000,
+        "processingFee": "0.25% + GST",
+        "prepayment": "Nil",
+        "minAmount": 25000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 600,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 14.5,
+        "rateRange": "14.50 - 18.00",
+        "maxTenure": 5,
+        "maxAmount": 400000,
+        "processingFee": "1.50% of loan amount",
+        "prepayment": "Part prepayment after 6 months",
+        "minAmount": 25000,
+        "foir": 0.55,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.5,
+        "rateRange": "9.50 - 14.95",
+        "maxTenure": 20,
+        "maxAmount": 50000000,
+        "processingFee": "1% of loan amount",
+        "prepayment": "2% within first 3 years, nil after",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "kotak-mahindra-bank",
+    "name": "Kotak Mahindra Bank",
+    "fullName": "Kotak Mahindra Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.75,
+        "rateRange": "8.75 - 9.65",
+        "maxTenure": 20,
+        "maxAmount": 100000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.7,
+        "rateRange": "8.70 - 12.00",
+        "maxTenure": 7,
+        "maxAmount": 10000000,
+        "processingFee": "0.50% of loan amount",
+        "prepayment": "Nil after 12 months",
+        "minAmount": 100000,
+        "foir": 0.55,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.99,
+        "rateRange": "10.99 - 24.00",
+        "maxTenure": 5,
+        "maxAmount": 4000000,
+        "processingFee": "Up to 2.50%",
+        "prepayment": "4% of outstanding",
+        "minAmount": 50000,
+        "foir": 0.45,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 725,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "education-loan": {
+        "rate": 10,
+        "rateRange": "10.00 - 16.00",
+        "maxTenure": 10,
+        "maxAmount": 5000000,
+        "processingFee": "Up to 2% + GST",
+        "prepayment": "Nil",
+        "minAmount": 100000,
+        "foir": 0.5,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 14,
+        "rateRange": "14.00 - 19.99",
+        "maxTenure": 5,
+        "maxAmount": 75000000,
+        "processingFee": "2.50% of loan amount",
+        "prepayment": "4% of outstanding",
+        "minAmount": 300000,
+        "foir": 0.4,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 10,
+        "rateRange": "10.00 - 17.00",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 600,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 13.5,
+        "rateRange": "13.50 - 16.50",
+        "maxTenure": 5,
+        "maxAmount": 400000,
+        "processingFee": "1% of loan amount",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 25000,
+        "foir": 0.55,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.1,
+        "rateRange": "9.10 - 12.50",
+        "maxTenure": 15,
+        "maxAmount": 50000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "bank-of-baroda",
+    "name": "Bank of Baroda",
+    "fullName": "Bank of Baroda",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.4,
+        "rateRange": "8.40 - 10.65",
+        "maxTenure": 30,
+        "maxAmount": 100000000,
+        "processingFee": "0.25% of loan amount + GST (max ₹25,000)",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 100000,
+        "foir": 0.52,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.65,
+        "rateRange": "8.65 - 10.90",
+        "maxTenure": 7,
+        "maxAmount": 10000000,
+        "processingFee": "₹1,500 + GST",
+        "prepayment": "Nil after 12 months for floating",
+        "minAmount": 100000,
+        "foir": 0.57,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.6,
+        "rateRange": "10.60 - 14.50",
+        "maxTenure": 7,
+        "maxAmount": 2000000,
+        "processingFee": "2% of loan amount + GST",
+        "prepayment": "3% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.47,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use",
+          "Government-backed institution"
+        ]
+      },
+      "education-loan": {
+        "rate": 7.95,
+        "rateRange": "7.95 - 10.45",
+        "maxTenure": 15,
+        "maxAmount": 15000000,
+        "processingFee": "Nil",
+        "prepayment": "Nil",
+        "minAmount": 50000,
+        "foir": 0.52,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 10.25,
+        "rateRange": "10.25 - 14.65",
+        "maxTenure": 5,
+        "maxAmount": 50000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "2% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.42,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options",
+          "Government-backed institution"
+        ]
+      },
+      "gold-loan": {
+        "rate": 7.7,
+        "rateRange": "7.70 - 9.70",
+        "maxTenure": 3,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.62,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 11.7,
+        "rateRange": "11.70 - 14.30",
+        "maxTenure": 5,
+        "maxAmount": 300000,
+        "processingFee": "₹1,000 + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 25000,
+        "foir": 0.57,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.15,
+        "rateRange": "9.15 - 12.15",
+        "maxTenure": 15,
+        "maxAmount": 50000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.52,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "pnb",
+    "name": "PNB",
+    "fullName": "Punjab National Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.45,
+        "rateRange": "8.45 - 10.25",
+        "maxTenure": 30,
+        "maxAmount": 100000000,
+        "processingFee": "0.35% of loan amount + GST (max ₹15,000)",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 200000,
+        "foir": 0.52,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.85,
+        "rateRange": "8.85 - 10.30",
+        "maxTenure": 7,
+        "maxAmount": 10000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 12 months for floating",
+        "minAmount": 100000,
+        "foir": 0.57,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.4,
+        "rateRange": "10.40 - 14.85",
+        "maxTenure": 5,
+        "maxAmount": 1500000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "3% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.47,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use",
+          "Government-backed institution"
+        ]
+      },
+      "education-loan": {
+        "rate": 8.1,
+        "rateRange": "8.10 - 10.90",
+        "maxTenure": 15,
+        "maxAmount": 10000000,
+        "processingFee": "Nil",
+        "prepayment": "Nil",
+        "minAmount": 50000,
+        "foir": 0.52,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 11.5,
+        "rateRange": "11.50 - 14.50",
+        "maxTenure": 5,
+        "maxAmount": 25000000,
+        "processingFee": "1% + GST",
+        "prepayment": "2% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.42,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options",
+          "Government-backed institution"
+        ]
+      },
+      "gold-loan": {
+        "rate": 7.85,
+        "rateRange": "7.85 - 9.90",
+        "maxTenure": 3,
+        "maxAmount": 2500000,
+        "processingFee": "0.75% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.62,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 12,
+        "rateRange": "12.00 - 14.65",
+        "maxTenure": 5,
+        "maxAmount": 300000,
+        "processingFee": "0.75% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 25000,
+        "foir": 0.57,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9,
+        "rateRange": "9.00 - 11.50",
+        "maxTenure": 15,
+        "maxAmount": 30000000,
+        "processingFee": "0.75% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.52,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "canara-bank",
+    "name": "Canara Bank",
+    "fullName": "Canara Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.4,
+        "rateRange": "8.40 - 10.95",
+        "maxTenure": 30,
+        "maxAmount": 100000000,
+        "processingFee": "0.50% of loan amount + GST (max ₹10,000)",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 100000,
+        "foir": 0.52,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.75,
+        "rateRange": "8.75 - 10.50",
+        "maxTenure": 7,
+        "maxAmount": 7500000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 12 months",
+        "minAmount": 100000,
+        "foir": 0.57,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.55,
+        "rateRange": "10.55 - 14.20",
+        "maxTenure": 5,
+        "maxAmount": 1000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "3% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.47,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use",
+          "Government-backed institution"
+        ]
+      },
+      "education-loan": {
+        "rate": 8,
+        "rateRange": "8.00 - 10.75",
+        "maxTenure": 15,
+        "maxAmount": 10000000,
+        "processingFee": "Nil",
+        "prepayment": "Nil",
+        "minAmount": 50000,
+        "foir": 0.52,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 10.85,
+        "rateRange": "10.85 - 14.85",
+        "maxTenure": 5,
+        "maxAmount": 25000000,
+        "processingFee": "1% + GST",
+        "prepayment": "2% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.42,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options",
+          "Government-backed institution"
+        ]
+      },
+      "gold-loan": {
+        "rate": 7.65,
+        "rateRange": "7.65 - 9.65",
+        "maxTenure": 3,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.62,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 11.9,
+        "rateRange": "11.90 - 14.00",
+        "maxTenure": 5,
+        "maxAmount": 300000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 25000,
+        "foir": 0.57,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 8.95,
+        "rateRange": "8.95 - 12.00",
+        "maxTenure": 15,
+        "maxAmount": 30000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.52,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "union-bank",
+    "name": "Union Bank",
+    "fullName": "Union Bank of India",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.35,
+        "rateRange": "8.35 - 10.75",
+        "maxTenure": 30,
+        "maxAmount": 100000000,
+        "processingFee": "0.50% of loan amount + GST (max ₹15,000)",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 200000,
+        "foir": 0.52,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.7,
+        "rateRange": "8.70 - 10.70",
+        "maxTenure": 7,
+        "maxAmount": 7500000,
+        "processingFee": "₹1,000 + GST",
+        "prepayment": "Nil after 12 months",
+        "minAmount": 100000,
+        "foir": 0.57,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.8,
+        "rateRange": "10.80 - 14.50",
+        "maxTenure": 5,
+        "maxAmount": 1500000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "3% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.47,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use",
+          "Government-backed institution"
+        ]
+      },
+      "education-loan": {
+        "rate": 8.05,
+        "rateRange": "8.05 - 10.60",
+        "maxTenure": 15,
+        "maxAmount": 10000000,
+        "processingFee": "Nil",
+        "prepayment": "Nil",
+        "minAmount": 50000,
+        "foir": 0.52,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 11,
+        "rateRange": "11.00 - 14.00",
+        "maxTenure": 5,
+        "maxAmount": 25000000,
+        "processingFee": "1% + GST",
+        "prepayment": "2% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.42,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options",
+          "Government-backed institution"
+        ]
+      },
+      "gold-loan": {
+        "rate": 7.8,
+        "rateRange": "7.80 - 9.80",
+        "maxTenure": 3,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.62,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 12.2,
+        "rateRange": "12.20 - 14.50",
+        "maxTenure": 5,
+        "maxAmount": 300000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 25000,
+        "foir": 0.57,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9,
+        "rateRange": "9.00 - 11.80",
+        "maxTenure": 15,
+        "maxAmount": 50000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.52,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "indian-bank",
+    "name": "Indian Bank",
+    "fullName": "Indian Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.4,
+        "rateRange": "8.40 - 10.40",
+        "maxTenure": 30,
+        "maxAmount": 100000000,
+        "processingFee": "0.23% of loan amount + GST (max ₹20,000)",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 200000,
+        "foir": 0.52,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.8,
+        "rateRange": "8.80 - 10.30",
+        "maxTenure": 7,
+        "maxAmount": 7500000,
+        "processingFee": "₹1,500 + GST",
+        "prepayment": "Nil after 12 months",
+        "minAmount": 100000,
+        "foir": 0.57,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.3,
+        "rateRange": "10.30 - 14.15",
+        "maxTenure": 5,
+        "maxAmount": 1000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "3% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.47,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use",
+          "Government-backed institution"
+        ]
+      },
+      "education-loan": {
+        "rate": 8,
+        "rateRange": "8.00 - 10.30",
+        "maxTenure": 15,
+        "maxAmount": 10000000,
+        "processingFee": "Nil",
+        "prepayment": "Nil",
+        "minAmount": 50000,
+        "foir": 0.52,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 11.15,
+        "rateRange": "11.15 - 13.65",
+        "maxTenure": 5,
+        "maxAmount": 25000000,
+        "processingFee": "1% + GST",
+        "prepayment": "2% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.42,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options",
+          "Government-backed institution"
+        ]
+      },
+      "gold-loan": {
+        "rate": 7.6,
+        "rateRange": "7.60 - 9.60",
+        "maxTenure": 3,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.62,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 11.8,
+        "rateRange": "11.80 - 14.00",
+        "maxTenure": 5,
+        "maxAmount": 300000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 25000,
+        "foir": 0.57,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.1,
+        "rateRange": "9.10 - 11.60",
+        "maxTenure": 15,
+        "maxAmount": 30000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.52,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "idbi-bank",
+    "name": "IDBI Bank",
+    "fullName": "IDBI Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.4,
+        "rateRange": "8.40 - 12.25",
+        "maxTenure": 30,
+        "maxAmount": 100000000,
+        "processingFee": "0.50% of loan amount + GST (max ₹20,000)",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 200000,
+        "foir": 0.52,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.8,
+        "rateRange": "8.80 - 11.00",
+        "maxTenure": 7,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 12 months",
+        "minAmount": 100000,
+        "foir": 0.57,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.5,
+        "rateRange": "10.50 - 14.50",
+        "maxTenure": 5,
+        "maxAmount": 1000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "3% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.47,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use",
+          "Government-backed institution"
+        ]
+      },
+      "education-loan": {
+        "rate": 8.25,
+        "rateRange": "8.25 - 11.25",
+        "maxTenure": 15,
+        "maxAmount": 10000000,
+        "processingFee": "Nil",
+        "prepayment": "Nil",
+        "minAmount": 50000,
+        "foir": 0.52,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 11.5,
+        "rateRange": "11.50 - 14.00",
+        "maxTenure": 5,
+        "maxAmount": 25000000,
+        "processingFee": "1% + GST",
+        "prepayment": "2% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.42,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options",
+          "Government-backed institution"
+        ]
+      },
+      "gold-loan": {
+        "rate": 7.65,
+        "rateRange": "7.65 - 10.50",
+        "maxTenure": 3,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.62,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 12.5,
+        "rateRange": "12.50 - 15.00",
+        "maxTenure": 5,
+        "maxAmount": 300000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 25000,
+        "foir": 0.57,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9,
+        "rateRange": "9.00 - 12.00",
+        "maxTenure": 15,
+        "maxAmount": 50000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.52,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "bank-of-india",
+    "name": "Bank of India",
+    "fullName": "Bank of India",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.4,
+        "rateRange": "8.40 - 10.85",
+        "maxTenure": 30,
+        "maxAmount": 100000000,
+        "processingFee": "0.25% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 200000,
+        "foir": 0.52,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.85,
+        "rateRange": "8.85 - 10.85",
+        "maxTenure": 7,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 12 months",
+        "minAmount": 100000,
+        "foir": 0.57,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.85,
+        "rateRange": "10.85 - 14.85",
+        "maxTenure": 5,
+        "maxAmount": 1500000,
+        "processingFee": "1.50% of loan amount + GST",
+        "prepayment": "3% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.47,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use",
+          "Government-backed institution"
+        ]
+      },
+      "education-loan": {
+        "rate": 8.1,
+        "rateRange": "8.10 - 10.85",
+        "maxTenure": 15,
+        "maxAmount": 10000000,
+        "processingFee": "Nil",
+        "prepayment": "Nil",
+        "minAmount": 50000,
+        "foir": 0.52,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 11.25,
+        "rateRange": "11.25 - 14.75",
+        "maxTenure": 5,
+        "maxAmount": 25000000,
+        "processingFee": "1% + GST",
+        "prepayment": "2% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.42,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options",
+          "Government-backed institution"
+        ]
+      },
+      "gold-loan": {
+        "rate": 7.75,
+        "rateRange": "7.75 - 9.75",
+        "maxTenure": 3,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.62,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 12.3,
+        "rateRange": "12.30 - 14.80",
+        "maxTenure": 5,
+        "maxAmount": 200000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 25000,
+        "foir": 0.57,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.1,
+        "rateRange": "9.10 - 12.60",
+        "maxTenure": 15,
+        "maxAmount": 30000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.52,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "central-bank",
+    "name": "Central Bank",
+    "fullName": "Central Bank of India",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.45,
+        "rateRange": "8.45 - 10.50",
+        "maxTenure": 30,
+        "maxAmount": 50000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 200000,
+        "foir": 0.52,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.9,
+        "rateRange": "8.90 - 10.90",
+        "maxTenure": 7,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 12 months",
+        "minAmount": 100000,
+        "foir": 0.57,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.7,
+        "rateRange": "10.70 - 14.70",
+        "maxTenure": 5,
+        "maxAmount": 1000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "3% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.47,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use",
+          "Government-backed institution"
+        ]
+      },
+      "education-loan": {
+        "rate": 8.15,
+        "rateRange": "8.15 - 10.65",
+        "maxTenure": 15,
+        "maxAmount": 10000000,
+        "processingFee": "Nil",
+        "prepayment": "Nil",
+        "minAmount": 50000,
+        "foir": 0.52,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 11.5,
+        "rateRange": "11.50 - 14.50",
+        "maxTenure": 5,
+        "maxAmount": 10000000,
+        "processingFee": "1% + GST",
+        "prepayment": "2% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.42,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options",
+          "Government-backed institution"
+        ]
+      },
+      "gold-loan": {
+        "rate": 7.9,
+        "rateRange": "7.90 - 10.00",
+        "maxTenure": 3,
+        "maxAmount": 3000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.62,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 12.5,
+        "rateRange": "12.50 - 15.00",
+        "maxTenure": 5,
+        "maxAmount": 200000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 25000,
+        "foir": 0.57,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.2,
+        "rateRange": "9.20 - 12.70",
+        "maxTenure": 15,
+        "maxAmount": 30000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.52,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "indusind-bank",
+    "name": "IndusInd Bank",
+    "fullName": "IndusInd Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.75,
+        "rateRange": "8.75 - 11.70",
+        "maxTenure": 25,
+        "maxAmount": 50000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "4% for fixed rate, nil for floating",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 9,
+        "rateRange": "9.00 - 13.50",
+        "maxTenure": 7,
+        "maxAmount": 10000000,
+        "processingFee": "0.50% of loan amount",
+        "prepayment": "5% of outstanding principal",
+        "minAmount": 100000,
+        "foir": 0.55,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.49,
+        "rateRange": "10.49 - 26.00",
+        "maxTenure": 5,
+        "maxAmount": 3000000,
+        "processingFee": "Up to 3%",
+        "prepayment": "5% of outstanding",
+        "minAmount": 50000,
+        "foir": 0.45,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 725,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "education-loan": {
+        "rate": 11.5,
+        "rateRange": "11.50 - 14.50",
+        "maxTenure": 10,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 100000,
+        "foir": 0.5,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 14,
+        "rateRange": "14.00 - 22.00",
+        "maxTenure": 5,
+        "maxAmount": 30000000,
+        "processingFee": "2% + GST",
+        "prepayment": "5% of outstanding",
+        "minAmount": 200000,
+        "foir": 0.4,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 11,
+        "rateRange": "11.00 - 16.00",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 25000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 600,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 14,
+        "rateRange": "14.00 - 18.00",
+        "maxTenure": 4,
+        "maxAmount": 300000,
+        "processingFee": "1.50% of loan amount",
+        "prepayment": "5% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.55,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.5,
+        "rateRange": "9.50 - 14.00",
+        "maxTenure": 15,
+        "maxAmount": 50000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "4% within first 3 years, nil after",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "yes-bank",
+    "name": "Yes Bank",
+    "fullName": "Yes Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 9,
+        "rateRange": "9.00 - 11.25",
+        "maxTenure": 25,
+        "maxAmount": 50000000,
+        "processingFee": "Up to 1% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 9.25,
+        "rateRange": "9.25 - 13.00",
+        "maxTenure": 7,
+        "maxAmount": 7500000,
+        "processingFee": "1% of loan amount",
+        "prepayment": "5% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.55,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.49,
+        "rateRange": "10.49 - 20.00",
+        "maxTenure": 5,
+        "maxAmount": 4000000,
+        "processingFee": "Up to 2.50%",
+        "prepayment": "5% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.45,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 725,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "education-loan": {
+        "rate": 10,
+        "rateRange": "10.00 - 15.00",
+        "maxTenure": 10,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 100000,
+        "foir": 0.5,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 13.5,
+        "rateRange": "13.50 - 20.00",
+        "maxTenure": 5,
+        "maxAmount": 50000000,
+        "processingFee": "2% + GST",
+        "prepayment": "4% of outstanding",
+        "minAmount": 300000,
+        "foir": 0.4,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 11.5,
+        "rateRange": "11.50 - 16.50",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 25000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 600,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 14.5,
+        "rateRange": "14.50 - 18.00",
+        "maxTenure": 4,
+        "maxAmount": 300000,
+        "processingFee": "1.50%",
+        "prepayment": "5% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.55,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.5,
+        "rateRange": "9.50 - 13.00",
+        "maxTenure": 15,
+        "maxAmount": 50000000,
+        "processingFee": "1.50% of loan amount + GST",
+        "prepayment": "4% for fixed, nil for floating",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "federal-bank",
+    "name": "Federal Bank",
+    "fullName": "Federal Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.7,
+        "rateRange": "8.70 - 10.60",
+        "maxTenure": 30,
+        "maxAmount": 50000000,
+        "processingFee": "0.50% of loan amount + GST (max ₹10,000)",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 300000,
+        "foir": 0.5,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.8,
+        "rateRange": "8.80 - 12.50",
+        "maxTenure": 7,
+        "maxAmount": 7500000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 100000,
+        "foir": 0.55,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.49,
+        "rateRange": "10.49 - 17.99",
+        "maxTenure": 5,
+        "maxAmount": 2500000,
+        "processingFee": "Up to 3%",
+        "prepayment": "5% of outstanding",
+        "minAmount": 50000,
+        "foir": 0.45,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 725,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "education-loan": {
+        "rate": 9.85,
+        "rateRange": "9.85 - 12.50",
+        "maxTenure": 15,
+        "maxAmount": 7500000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil",
+        "minAmount": 100000,
+        "foir": 0.5,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 12,
+        "rateRange": "12.00 - 16.50",
+        "maxTenure": 5,
+        "maxAmount": 25000000,
+        "processingFee": "1.50% + GST",
+        "prepayment": "3% of outstanding",
+        "minAmount": 200000,
+        "foir": 0.4,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 8.99,
+        "rateRange": "8.99 - 12.00",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 600,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 12.5,
+        "rateRange": "12.50 - 16.00",
+        "maxTenure": 5,
+        "maxAmount": 300000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 25000,
+        "foir": 0.55,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.5,
+        "rateRange": "9.50 - 13.50",
+        "maxTenure": 15,
+        "maxAmount": 30000000,
+        "processingFee": "0.75% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "bandhan-bank",
+    "name": "Bandhan Bank",
+    "fullName": "Bandhan Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 9.16,
+        "rateRange": "9.16 - 14.00",
+        "maxTenure": 25,
+        "maxAmount": 30000000,
+        "processingFee": "Up to 1% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 200000,
+        "foir": 0.5,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 10,
+        "rateRange": "10.00 - 14.00",
+        "maxTenure": 5,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "4% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.55,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required"
+        ]
+      },
+      "personal-loan": {
+        "rate": 11,
+        "rateRange": "11.00 - 18.00",
+        "maxTenure": 5,
+        "maxAmount": 2000000,
+        "processingFee": "Up to 3%",
+        "prepayment": "5% of outstanding",
+        "minAmount": 50000,
+        "foir": 0.45,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 725,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "education-loan": {
+        "rate": 12,
+        "rateRange": "12.00 - 15.00",
+        "maxTenure": 7,
+        "maxAmount": 3000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 100000,
+        "foir": 0.5,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 14.5,
+        "rateRange": "14.50 - 20.00",
+        "maxTenure": 5,
+        "maxAmount": 10000000,
+        "processingFee": "2% + GST",
+        "prepayment": "4% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.4,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 9.99,
+        "rateRange": "9.99 - 14.00",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 600,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 10,
+        "rateRange": "10.00 - 15.00",
+        "maxTenure": 15,
+        "maxAmount": 25000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "4% for fixed, nil for floating",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "idfc-first-bank",
+    "name": "IDFC First Bank",
+    "fullName": "IDFC First Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.75,
+        "rateRange": "8.75 - 10.50",
+        "maxTenure": 30,
+        "maxAmount": 50000000,
+        "processingFee": "Up to 3% of loan amount",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.75,
+        "rateRange": "8.75 - 11.50",
+        "maxTenure": 7,
+        "maxAmount": 10000000,
+        "processingFee": "Up to 2% of loan amount",
+        "prepayment": "5% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.55,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.49,
+        "rateRange": "10.49 - 23.99",
+        "maxTenure": 5,
+        "maxAmount": 4000000,
+        "processingFee": "Up to 3.50%",
+        "prepayment": "5% of outstanding",
+        "minAmount": 20000,
+        "foir": 0.45,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 725,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "education-loan": {
+        "rate": 10.5,
+        "rateRange": "10.50 - 14.00",
+        "maxTenure": 10,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 100000,
+        "foir": 0.5,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 12.5,
+        "rateRange": "12.50 - 22.00",
+        "maxTenure": 5,
+        "maxAmount": 30000000,
+        "processingFee": "2% + GST",
+        "prepayment": "5% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.4,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 9,
+        "rateRange": "9.00 - 14.00",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 600,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 13,
+        "rateRange": "13.00 - 18.00",
+        "maxTenure": 4,
+        "maxAmount": 400000,
+        "processingFee": "2% of loan amount",
+        "prepayment": "5% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.55,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9,
+        "rateRange": "9.00 - 14.00",
+        "maxTenure": 15,
+        "maxAmount": 50000000,
+        "processingFee": "Up to 3% of loan amount",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "south-indian-bank",
+    "name": "South Indian Bank",
+    "fullName": "South Indian Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.7,
+        "rateRange": "8.70 - 11.20",
+        "maxTenure": 25,
+        "maxAmount": 30000000,
+        "processingFee": "0.50% of loan amount + GST (max ₹10,000)",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 200000,
+        "foir": 0.5,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 9,
+        "rateRange": "9.00 - 12.00",
+        "maxTenure": 7,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 100000,
+        "foir": 0.55,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 11,
+        "rateRange": "11.00 - 16.00",
+        "maxTenure": 5,
+        "maxAmount": 1500000,
+        "processingFee": "2% of loan amount + GST",
+        "prepayment": "3% of outstanding",
+        "minAmount": 50000,
+        "foir": 0.45,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 725,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "education-loan": {
+        "rate": 9.15,
+        "rateRange": "9.15 - 12.00",
+        "maxTenure": 15,
+        "maxAmount": 7500000,
+        "processingFee": "Nil",
+        "prepayment": "Nil",
+        "minAmount": 50000,
+        "foir": 0.5,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 11.5,
+        "rateRange": "11.50 - 15.00",
+        "maxTenure": 5,
+        "maxAmount": 25000000,
+        "processingFee": "1% + GST",
+        "prepayment": "2% of outstanding",
+        "minAmount": 200000,
+        "foir": 0.4,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 7.99,
+        "rateRange": "7.99 - 12.00",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 600,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 12,
+        "rateRange": "12.00 - 15.00",
+        "maxTenure": 5,
+        "maxAmount": 200000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 25000,
+        "foir": 0.55,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.75,
+        "rateRange": "9.75 - 13.00",
+        "maxTenure": 15,
+        "maxAmount": 25000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "karur-vysya-bank",
+    "name": "Karur Vysya Bank",
+    "fullName": "Karur Vysya Bank",
+    "type": "bank",
+    "loans": {
+      "home-loan": {
+        "rate": 8.8,
+        "rateRange": "8.80 - 10.90",
+        "maxTenure": 25,
+        "maxAmount": 30000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 200000,
+        "foir": 0.5,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 9.1,
+        "rateRange": "9.10 - 12.00",
+        "maxTenure": 7,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 100000,
+        "foir": 0.55,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 11.5,
+        "rateRange": "11.50 - 17.00",
+        "maxTenure": 5,
+        "maxAmount": 1500000,
+        "processingFee": "2% of loan amount + GST",
+        "prepayment": "3% of outstanding",
+        "minAmount": 50000,
+        "foir": 0.45,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 725,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "education-loan": {
+        "rate": 9.5,
+        "rateRange": "9.50 - 12.50",
+        "maxTenure": 12,
+        "maxAmount": 7500000,
+        "processingFee": "Nil",
+        "prepayment": "Nil",
+        "minAmount": 50000,
+        "foir": 0.5,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 35,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "student"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Admission Letter",
+          "Fee Structure",
+          "Mark Sheets",
+          "Income Proof of Co-applicant",
+          "Collateral Documents (if applicable)"
+        ],
+        "features": [
+          "Moratorium during study period",
+          "Tax benefit under Section 80E",
+          "No collateral for loans up to Rs.7.5L",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 12,
+        "rateRange": "12.00 - 16.00",
+        "maxTenure": 5,
+        "maxAmount": 25000000,
+        "processingFee": "1% + GST",
+        "prepayment": "2% of outstanding",
+        "minAmount": 200000,
+        "foir": 0.4,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 8,
+        "rateRange": "8.00 - 11.00",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil",
+        "minAmount": 20000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 600,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 12.5,
+        "rateRange": "12.50 - 15.50",
+        "maxTenure": 5,
+        "maxAmount": 200000,
+        "processingFee": "0.50% + GST",
+        "prepayment": "Nil after 6 months",
+        "minAmount": 25000,
+        "foir": 0.55,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 650,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.5,
+        "rateRange": "9.50 - 13.00",
+        "maxTenure": 15,
+        "maxAmount": 25000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.5,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "bajaj-finserv",
+    "name": "Bajaj Finserv",
+    "fullName": "Bajaj Finserv",
+    "type": "nbfc",
+    "loans": {
+      "home-loan": {
+        "rate": 8.5,
+        "rateRange": "8.50 - 14.00",
+        "maxTenure": 30,
+        "maxAmount": 50000000,
+        "processingFee": "Up to 1.50% of loan amount + GST",
+        "prepayment": "2% for fixed rate, nil for floating",
+        "minAmount": 500000,
+        "foir": 0.55,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 9,
+        "rateRange": "9.00 - 13.00",
+        "maxTenure": 7,
+        "maxAmount": 10000000,
+        "processingFee": "Up to 2% of loan amount",
+        "prepayment": "Part prepayment charges apply",
+        "minAmount": 100000,
+        "foir": 0.6,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required"
+        ]
+      },
+      "personal-loan": {
+        "rate": 11,
+        "rateRange": "11.00 - 30.00",
+        "maxTenure": 5,
+        "maxAmount": 3500000,
+        "processingFee": "Up to 3.50%",
+        "prepayment": "Part prepayment charges as per schedule",
+        "minAmount": 10000,
+        "foir": 0.5,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "business-loan": {
+        "rate": 14,
+        "rateRange": "14.00 - 26.00",
+        "maxTenure": 5,
+        "maxAmount": 50000000,
+        "processingFee": "Up to 3.50%",
+        "prepayment": "Charges apply",
+        "minAmount": 100000,
+        "foir": 0.45,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 9.5,
+        "rateRange": "9.50 - 14.00",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 5000,
+        "foir": 0.65,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 14,
+        "rateRange": "14.00 - 22.00",
+        "maxTenure": 5,
+        "maxAmount": 400000,
+        "processingFee": "Up to 3%",
+        "prepayment": "Part prepayment charges apply",
+        "minAmount": 20000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9,
+        "rateRange": "9.00 - 16.00",
+        "maxTenure": 18,
+        "maxAmount": 50000000,
+        "processingFee": "Up to 3.50% of loan amount",
+        "prepayment": "2% for fixed, nil for floating",
+        "minAmount": 500000,
+        "foir": 0.55,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "tata-capital",
+    "name": "Tata Capital",
+    "fullName": "Tata Capital",
+    "type": "nbfc",
+    "loans": {
+      "home-loan": {
+        "rate": 8.75,
+        "rateRange": "8.75 - 12.50",
+        "maxTenure": 25,
+        "maxAmount": 50000000,
+        "processingFee": "Up to 0.50% of loan amount + GST",
+        "prepayment": "Nil for floating rate loans",
+        "minAmount": 500000,
+        "foir": 0.55,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "car-loan": {
+        "rate": 8.95,
+        "rateRange": "8.95 - 13.00",
+        "maxTenure": 7,
+        "maxAmount": 10000000,
+        "processingFee": "1% of loan amount + GST",
+        "prepayment": "Part prepayment allowed after 12 EMIs",
+        "minAmount": 100000,
+        "foir": 0.6,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required"
+        ]
+      },
+      "personal-loan": {
+        "rate": 10.99,
+        "rateRange": "10.99 - 24.00",
+        "maxTenure": 6,
+        "maxAmount": 3500000,
+        "processingFee": "Up to 3%",
+        "prepayment": "Part prepayment charges apply",
+        "minAmount": 75000,
+        "foir": 0.5,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "business-loan": {
+        "rate": 13,
+        "rateRange": "13.00 - 20.00",
+        "maxTenure": 5,
+        "maxAmount": 50000000,
+        "processingFee": "2% + GST",
+        "prepayment": "4% of outstanding",
+        "minAmount": 300000,
+        "foir": 0.45,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "bike-loan": {
+        "rate": 12,
+        "rateRange": "12.00 - 20.00",
+        "maxTenure": 5,
+        "maxAmount": 500000,
+        "processingFee": "1.50% of loan amount",
+        "prepayment": "Part prepayment after 12 EMIs",
+        "minAmount": 25000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.25,
+        "rateRange": "9.25 - 14.00",
+        "maxTenure": 18,
+        "maxAmount": 50000000,
+        "processingFee": "Up to 1.50% of loan amount + GST",
+        "prepayment": "4% for fixed rate, nil for floating",
+        "minAmount": 500000,
+        "foir": 0.55,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "hdfc-ltd",
+    "name": "HDFC Ltd",
+    "fullName": "HDFC Limited (merged with HDFC Bank)",
+    "type": "nbfc",
+    "loans": {
+      "home-loan": {
+        "rate": 8.75,
+        "rateRange": "8.75 - 9.95",
+        "maxTenure": 30,
+        "maxAmount": 100000000,
+        "processingFee": "0.50% of loan amount or ₹3,000 whichever is higher",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 500000,
+        "foir": 0.55,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 9.5,
+        "rateRange": "9.50 - 13.00",
+        "maxTenure": 15,
+        "maxAmount": 50000000,
+        "processingFee": "1.50% of loan amount + GST",
+        "prepayment": "2% for fixed, nil for floating",
+        "minAmount": 500000,
+        "foir": 0.55,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "lic-housing",
+    "name": "LIC Housing",
+    "fullName": "LIC Housing Finance",
+    "type": "nbfc",
+    "loans": {
+      "home-loan": {
+        "rate": 8.5,
+        "rateRange": "8.50 - 10.75",
+        "maxTenure": 30,
+        "maxAmount": 100000000,
+        "processingFee": "0.25% of loan amount + GST (max ₹15,000)",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 200000,
+        "foir": 0.55,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 10,
+        "rateRange": "10.00 - 12.50",
+        "maxTenure": 15,
+        "maxAmount": 50000000,
+        "processingFee": "0.50% of loan amount + GST",
+        "prepayment": "2% for fixed, nil for floating",
+        "minAmount": 500000,
+        "foir": 0.55,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "muthoot-finance",
+    "name": "Muthoot Finance",
+    "fullName": "Muthoot Finance Limited",
+    "type": "nbfc",
+    "loans": {
+      "gold-loan": {
+        "rate": 12,
+        "rateRange": "12.00 - 26.00",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 1500,
+        "foir": 0.65,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 14,
+        "rateRange": "14.00 - 24.00",
+        "maxTenure": 3,
+        "maxAmount": 500000,
+        "processingFee": "2% + GST",
+        "prepayment": "4% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.5,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "business-loan": {
+        "rate": 15,
+        "rateRange": "15.00 - 24.00",
+        "maxTenure": 3,
+        "maxAmount": 5000000,
+        "processingFee": "2% + GST",
+        "prepayment": "4% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.45,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "home-loan": {
+        "rate": 10,
+        "rateRange": "10.00 - 14.00",
+        "maxTenure": 15,
+        "maxAmount": 30000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil for floating rate",
+        "minAmount": 200000,
+        "foir": 0.55,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "manappuram-finance",
+    "name": "Manappuram Finance",
+    "fullName": "Manappuram Finance Limited",
+    "type": "nbfc",
+    "loans": {
+      "gold-loan": {
+        "rate": 12,
+        "rateRange": "12.00 - 26.00",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "1% + GST",
+        "prepayment": "Nil",
+        "minAmount": 1500,
+        "foir": 0.65,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 22,
+        "rateRange": "22.00 - 28.00",
+        "maxTenure": 3,
+        "maxAmount": 500000,
+        "processingFee": "2.50% + GST",
+        "prepayment": "4% of outstanding",
+        "minAmount": 10000,
+        "foir": 0.5,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "home-loan": {
+        "rate": 10.5,
+        "rateRange": "10.50 - 15.00",
+        "maxTenure": 15,
+        "maxAmount": 15000000,
+        "processingFee": "1.50% + GST",
+        "prepayment": "2% for first 2 years, nil after",
+        "minAmount": 200000,
+        "foir": 0.55,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "business-loan": {
+        "rate": 16,
+        "rateRange": "16.00 - 26.00",
+        "maxTenure": 3,
+        "maxAmount": 5000000,
+        "processingFee": "2.50% + GST",
+        "prepayment": "4% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.45,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "lt-finance",
+    "name": "L&T Finance",
+    "fullName": "L&T Finance Limited",
+    "type": "nbfc",
+    "loans": {
+      "home-loan": {
+        "rate": 8.65,
+        "rateRange": "8.65 - 14.00",
+        "maxTenure": 25,
+        "maxAmount": 50000000,
+        "processingFee": "Up to 2% of loan amount + GST",
+        "prepayment": "4% for fixed, nil for floating",
+        "minAmount": 500000,
+        "foir": 0.55,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "personal-loan": {
+        "rate": 12,
+        "rateRange": "12.00 - 28.00",
+        "maxTenure": 5,
+        "maxAmount": 2500000,
+        "processingFee": "Up to 4%",
+        "prepayment": "5% of outstanding",
+        "minAmount": 50000,
+        "foir": 0.5,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "business-loan": {
+        "rate": 14,
+        "rateRange": "14.00 - 22.00",
+        "maxTenure": 5,
+        "maxAmount": 20000000,
+        "processingFee": "2% + GST",
+        "prepayment": "4% of outstanding",
+        "minAmount": 200000,
+        "foir": 0.45,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "bike-loan": {
+        "rate": 12,
+        "rateRange": "12.00 - 18.00",
+        "maxTenure": 5,
+        "maxAmount": 400000,
+        "processingFee": "2% of loan amount",
+        "prepayment": "Part prepayment charges apply",
+        "minAmount": 25000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 10.5,
+        "rateRange": "10.50 - 14.50",
+        "maxTenure": 15,
+        "maxAmount": 30000000,
+        "processingFee": "Up to 2% of loan amount + GST",
+        "prepayment": "4% for fixed, nil for floating",
+        "minAmount": 500000,
+        "foir": 0.55,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "piramal-finance",
+    "name": "Piramal Finance",
+    "fullName": "Piramal Capital & Housing Finance",
+    "type": "nbfc",
+    "loans": {
+      "home-loan": {
+        "rate": 10,
+        "rateRange": "10.00 - 16.00",
+        "maxTenure": 20,
+        "maxAmount": 20000000,
+        "processingFee": "Up to 3% + GST",
+        "prepayment": "4% of outstanding for fixed rate",
+        "minAmount": 300000,
+        "foir": 0.55,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available"
+        ]
+      },
+      "personal-loan": {
+        "rate": 14,
+        "rateRange": "14.00 - 26.00",
+        "maxTenure": 5,
+        "maxAmount": 1000000,
+        "processingFee": "Up to 4%",
+        "prepayment": "5% of outstanding",
+        "minAmount": 50000,
+        "foir": 0.5,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "business-loan": {
+        "rate": 15,
+        "rateRange": "15.00 - 24.00",
+        "maxTenure": 5,
+        "maxAmount": 20000000,
+        "processingFee": "2% + GST",
+        "prepayment": "4% of outstanding",
+        "minAmount": 200000,
+        "foir": 0.45,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 11,
+        "rateRange": "11.00 - 16.00",
+        "maxTenure": 15,
+        "maxAmount": 30000000,
+        "processingFee": "Up to 3%",
+        "prepayment": "4% for fixed, nil for floating",
+        "minAmount": 500000,
+        "foir": 0.55,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "mahindra-finance",
+    "name": "Mahindra Finance",
+    "fullName": "Mahindra & Mahindra Financial Services",
+    "type": "nbfc",
+    "loans": {
+      "car-loan": {
+        "rate": 10,
+        "rateRange": "10.00 - 18.00",
+        "maxTenure": 7,
+        "maxAmount": 10000000,
+        "processingFee": "Up to 2.50% of loan amount",
+        "prepayment": "5% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.6,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Quick disbursement",
+          "Financing up to 90% of on-road price",
+          "No collateral required"
+        ]
+      },
+      "personal-loan": {
+        "rate": 14,
+        "rateRange": "14.00 - 24.00",
+        "maxTenure": 4,
+        "maxAmount": 1000000,
+        "processingFee": "Up to 3%",
+        "prepayment": "5% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.5,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "business-loan": {
+        "rate": 14.5,
+        "rateRange": "14.50 - 22.00",
+        "maxTenure": 5,
+        "maxAmount": 20000000,
+        "processingFee": "2% + GST",
+        "prepayment": "4% of outstanding",
+        "minAmount": 200000,
+        "foir": 0.45,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "gold-loan": {
+        "rate": 11,
+        "rateRange": "11.00 - 20.00",
+        "maxTenure": 2,
+        "maxAmount": 5000000,
+        "processingFee": "1.50% + GST",
+        "prepayment": "Nil",
+        "minAmount": 10000,
+        "foir": 0.65,
+        "minIncome": 15000,
+        "minAge": 18,
+        "maxAge": 70,
+        "minCreditScore": 575,
+        "employmentTypes": [
+          "salaried",
+          "self-employed",
+          "homemaker",
+          "farmer"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Gold Ornaments for Pledge",
+          "Passport Size Photographs"
+        ],
+        "features": [
+          "Minimal documentation",
+          "Quick disbursal (often same day)",
+          "No income proof required in many cases",
+          "No prepayment charges on floating rate"
+        ]
+      },
+      "bike-loan": {
+        "rate": 14,
+        "rateRange": "14.00 - 22.00",
+        "maxTenure": 4,
+        "maxAmount": 300000,
+        "processingFee": "2% of loan amount",
+        "prepayment": "5% of outstanding",
+        "minAmount": 20000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees"
+        ]
+      },
+      "home-loan": {
+        "rate": 9.5,
+        "rateRange": "9.50 - 15.00",
+        "maxTenure": 20,
+        "maxAmount": 30000000,
+        "processingFee": "1% + GST",
+        "prepayment": "3% for first 3 years, nil after",
+        "minAmount": 200000,
+        "foir": 0.55,
+        "minIncome": 25000,
+        "minAge": 21,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR (last 2 years)",
+          "Property Documents",
+          "Sale Agreement / Allotment Letter",
+          "Approved Building Plan"
+        ],
+        "features": [
+          "Competitive interest rates",
+          "Flexible tenure up to 30 years",
+          "Balance transfer facility available",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "hero-fincorp",
+    "name": "Hero FinCorp",
+    "fullName": "Hero FinCorp Limited",
+    "type": "nbfc",
+    "loans": {
+      "bike-loan": {
+        "rate": 10.5,
+        "rateRange": "10.50 - 18.00",
+        "maxTenure": 5,
+        "maxAmount": 500000,
+        "processingFee": "Up to 3% of loan amount",
+        "prepayment": "Part prepayment charges apply",
+        "minAmount": 20000,
+        "foir": 0.6,
+        "minIncome": 15000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 625,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 3 months)",
+          "Proforma Invoice from Dealer",
+          "Driving License"
+        ],
+        "features": [
+          "Up to 90% financing",
+          "Quick approval",
+          "Low processing fees"
+        ]
+      },
+      "personal-loan": {
+        "rate": 12,
+        "rateRange": "12.00 - 24.00",
+        "maxTenure": 5,
+        "maxAmount": 2500000,
+        "processingFee": "Up to 3%",
+        "prepayment": "5% of outstanding",
+        "minAmount": 25000,
+        "foir": 0.5,
+        "minIncome": 20000,
+        "minAge": 21,
+        "maxAge": 60,
+        "minCreditScore": 700,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips (last 3 months)",
+          "Bank Statements (last 6 months)",
+          "Form 16 / ITR",
+          "Employment Proof"
+        ],
+        "features": [
+          "No collateral required",
+          "Quick approval and disbursement",
+          "Flexible end-use"
+        ]
+      },
+      "business-loan": {
+        "rate": 15,
+        "rateRange": "15.00 - 22.00",
+        "maxTenure": 5,
+        "maxAmount": 25000000,
+        "processingFee": "2% + GST",
+        "prepayment": "4% of outstanding",
+        "minAmount": 100000,
+        "foir": 0.45,
+        "minIncome": 30000,
+        "minAge": 23,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "self-employed",
+          "business-owner"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Business Registration / GST Certificate",
+          "ITR (last 3 years)",
+          "Bank Statements (last 12 months)",
+          "Balance Sheet & P&L Statement"
+        ],
+        "features": [
+          "Quick processing",
+          "No collateral for smaller amounts",
+          "Flexible tenure options"
+        ]
+      },
+      "loan-against-property": {
+        "rate": 11,
+        "rateRange": "11.00 - 15.00",
+        "maxTenure": 15,
+        "maxAmount": 20000000,
+        "processingFee": "Up to 2% + GST",
+        "prepayment": "4% for first 3 years, nil after",
+        "minAmount": 500000,
+        "foir": 0.55,
+        "minIncome": 30000,
+        "minAge": 25,
+        "maxAge": 65,
+        "minCreditScore": 675,
+        "employmentTypes": [
+          "salaried",
+          "self-employed"
+        ],
+        "documents": [
+          "PAN Card",
+          "Aadhaar Card",
+          "Salary Slips / ITR (last 3 years)",
+          "Bank Statements (last 6 months)",
+          "Property Documents (Title Deed)",
+          "Property Valuation Report",
+          "NOC from Housing Society"
+        ],
+        "features": [
+          "Lower rates than personal loans",
+          "High loan-to-value ratio",
+          "Flexible tenure up to 20 years",
+          "No prepayment charges on floating rate"
+        ]
+      }
+    }
+  }
+]
