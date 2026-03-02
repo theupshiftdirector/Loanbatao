@@ -143,6 +143,8 @@ function escapeHtml(str) {
 // ─── Load data ───────────────────────────────────────────────────────────────
 const banks = JSON.parse(fs.readFileSync(path.join(DATA, 'banks.json'), 'utf8'));
 const layoutTemplate = fs.readFileSync(path.join(TEMPLATES, 'layout.html'), 'utf8');
+const affiliateData = JSON.parse(fs.readFileSync(path.join(DATA, 'affiliates.json'), 'utf8'));
+const affiliateTemplate = fs.readFileSync(path.join(TEMPLATES, 'affiliate.html'), 'utf8');
 
 // ─── Client-side Calculator JS ───────────────────────────────────────────────
 const CALCULATOR_JS = `
@@ -923,6 +925,336 @@ ${calculatorHTML()}
   };
 }
 
+// ─── Affiliate page builder ──────────────────────────────────────────────────
+
+function buildAffiliatePage(opts) {
+  const { title, description, keywords, canonicalPath, breadcrumb, breadcrumbItems, content, faqSection, linksSection, disclaimer, jsonLd } = opts;
+
+  let allJsonLd = '';
+  if (jsonLd) allJsonLd += `<script type="application/ld+json">\n${jsonLd}\n</script>\n`;
+  if (breadcrumbItems) allJsonLd += `    <script type="application/ld+json">\n${breadcrumbSchemaJSON(breadcrumbItems)}\n</script>`;
+
+  const verificationTag = GOOGLE_VERIFICATION ? `<meta name="google-site-verification" content="${GOOGLE_VERIFICATION}">` : '';
+
+  let html = affiliateTemplate
+    .replace(/\{\{PAGE_TITLE\}\}/g, title)
+    .replace(/\{\{META_DESCRIPTION\}\}/g, description)
+    .replace(/\{\{META_KEYWORDS\}\}/g, keywords || '')
+    .replace(/\{\{CANONICAL_PATH\}\}/g, canonicalPath)
+    .replace('{{JSON_LD}}', allJsonLd)
+    .replace('{{GOOGLE_VERIFICATION}}', verificationTag)
+    .replace('{{BREADCRUMB}}', breadcrumb || '')
+    .replace('{{CONTENT}}', content)
+    .replace('{{FAQ_SECTION}}', faqSection || '')
+    .replace('{{LINKS_SECTION}}', linksSection || '')
+    .replace('{{DISCLAIMER}}', disclaimer || '');
+
+  return html;
+}
+
+function generateAffiliatePage(pageData) {
+  const { slug, title, description, keywords, heroTitle, heroSub, loanType, sortBy, topPicks, editorNotes, badges, ctaText, faqs, contentType } = pageData;
+  const lt = LOAN_TYPES[loanType];
+
+  // Get banks with this loan type, sorted appropriately
+  const banksWithLoan = banks
+    .filter(b => b.loans[loanType])
+    .sort((a, b) => {
+      const loanA = a.loans[loanType];
+      const loanB = b.loans[loanType];
+      if (sortBy === 'minIncome') return (loanA.minIncome || 999999) - (loanB.minIncome || 999999);
+      if (sortBy === 'minCreditScore') return (loanA.minCreditScore || 999) - (loanB.minCreditScore || 999);
+      return loanA.rate - loanB.rate; // default: sort by rate
+    });
+
+  // --- Top 3 Picks ---
+  const topBanks = topPicks
+    .map(s => banks.find(b => b.slug === s))
+    .filter(b => b && b.loans[loanType]);
+
+  const defaultAmt = AMOUNTS[loanType][Math.floor(AMOUNTS[loanType].length / 2)];
+  const months = lt.defaultTenure * (lt.defaultUnit === 'years' ? 12 : 1);
+
+  const picksHTML = topBanks.map((bank, i) => {
+    const loan = bank.loans[loanType];
+    const badgeText = badges[bank.slug] || '';
+    const note = editorNotes[bank.slug] || '';
+    const emi = calculateEMI(defaultAmt, loan.rate, months);
+    const foir = loan.foir || lt.typicalFOIR;
+    const maxLoan50k = calculateMaxLoan(50000, 0, foir, loan.rate, months);
+
+    return `
+    <div class="pick-card${i === 0 ? ' featured' : ''}">
+        ${badgeText ? `<div class="pick-badge">${escapeHtml(badgeText)}</div>` : ''}
+        <div class="pick-rank">#${i + 1} Pick</div>
+        <div class="pick-name">${escapeHtml(bank.fullName)}</div>
+        <div class="pick-rate">${loan.rateRange}% <small>p.a.</small></div>
+        <p class="pick-note">${escapeHtml(note)}</p>
+        <ul class="pick-features">
+            <li>Min Income: \u20B9${formatINR(loan.minIncome || 0)}/month</li>
+            <li>Min CIBIL: ${loan.minCreditScore || 'N/A'}</li>
+            <li>Max Tenure: ${loan.maxTenure} years</li>
+            <li>Processing Fee: ${escapeHtml(loan.processingFee)}</li>
+            <li>Eligibility on \u20B950K salary: ${formatINRShort(maxLoan50k)}</li>
+        </ul>
+        <a href="/${bank.slug}-${loanType}" class="pick-cta">${escapeHtml(ctaText)} \u2192</a>
+    </div>`;
+  }).join('');
+
+  // --- Full Comparison Table (with eligibility-focused columns) ---
+  const tableRows = banksWithLoan.map(bank => {
+    const loan = bank.loans[loanType];
+    const foir = loan.foir || lt.typicalFOIR;
+    const maxLoan50k = calculateMaxLoan(50000, 0, foir, loan.rate, months);
+    return `<tr>
+        <td class="bank-name"><a href="/${bank.slug}-${loanType}" style="color:var(--text);text-decoration:none;">${escapeHtml(bank.name)}</a></td>
+        <td class="rate-col">${loan.rateRange}%</td>
+        <td>\u20B9${formatINR(loan.minIncome || 0)}/mo</td>
+        <td>${loan.minCreditScore || 'N/A'}</td>
+        <td>${formatINRShort(maxLoan50k)}</td>
+        <td>${escapeHtml(loan.processingFee)}</td>
+        <td class="cta-col"><a href="/${bank.slug}-${loanType}" class="table-cta">${escapeHtml(ctaText)} \u2192</a></td>
+    </tr>`;
+  }).join('');
+
+  // --- Content varies by page type ---
+  let extraContent = '';
+
+  if (contentType === 'cibil-guide') {
+    // Special content for CIBIL score page
+    extraContent = `
+<section class="info-section">
+    <h2>Understanding Your CIBIL Score</h2>
+    <p>Your CIBIL score (credit score) is a 3-digit number between 300 and 900 that represents your creditworthiness. Banks and NBFCs use this score to evaluate your loan and credit card applications.</p>
+
+    <div class="score-range-grid">
+        <div class="score-card excellent">
+            <div class="score-range">750 - 900</div>
+            <div class="score-label">Excellent</div>
+            <div class="score-impact">Best rates & instant approval</div>
+        </div>
+        <div class="score-card good">
+            <div class="score-range">700 - 749</div>
+            <div class="score-label">Good</div>
+            <div class="score-impact">Standard rates, easy approval</div>
+        </div>
+        <div class="score-card fair">
+            <div class="score-range">600 - 699</div>
+            <div class="score-label">Fair</div>
+            <div class="score-impact">Higher rates, limited options</div>
+        </div>
+        <div class="score-card poor">
+            <div class="score-range">300 - 599</div>
+            <div class="score-label">Poor</div>
+            <div class="score-impact">Difficult to get approval</div>
+        </div>
+    </div>
+
+    <h3>Minimum CIBIL Score by Loan Type</h3>
+    <p>Different loan types have different minimum credit score requirements. Here is a general guideline:</p>
+    <ul>
+        <li><strong>Home Loan:</strong> 675+ (some banks accept 650)</li>
+        <li><strong>Personal Loan:</strong> 700+ (NBFCs may accept 600+)</li>
+        <li><strong>Car Loan:</strong> 675+ (dealer financing may be more flexible)</li>
+        <li><strong>Education Loan:</strong> 625+ (co-applicant score matters more)</li>
+        <li><strong>Business Loan:</strong> 675+ (higher for unsecured loans)</li>
+        <li><strong>Gold Loan:</strong> 575+ (minimal credit score focus)</li>
+        <li><strong>Loan Against Property:</strong> 650+ (secured, so slightly relaxed)</li>
+    </ul>
+
+    <h3>How to Check CIBIL Score for Free</h3>
+    <ol>
+        <li><strong>Official CIBIL Website:</strong> Visit myscore.cibil.com for 1 free credit report per year</li>
+        <li><strong>Bank Apps:</strong> SBI YONO, HDFC Bank, ICICI iMobile, and Axis Bank apps offer free score checks for account holders</li>
+        <li><strong>Third-Party Platforms:</strong> Paytm, PhonePe, BankBazaar, and Paisabazaar provide free credit score monitoring</li>
+        <li><strong>RBI Mandate:</strong> Under RBI guidelines, all credit bureaus must provide one free credit report per year</li>
+    </ol>
+
+    <h3>Tips to Improve Your CIBIL Score</h3>
+    <ul>
+        <li>Pay all EMIs and credit card bills on or before the due date</li>
+        <li>Keep credit card utilization below 30% of your credit limit</li>
+        <li>Avoid applying for multiple loans or credit cards in a short period</li>
+        <li>Maintain a healthy mix of secured (home/car loan) and unsecured (personal loan/credit card) credit</li>
+        <li>Review your CIBIL report regularly and dispute any errors</li>
+        <li>Do not close old credit cards as they contribute to credit history length</li>
+        <li>Clear any overdue or settled accounts by paying the full amount</li>
+    </ul>
+</section>`;
+  } else if (contentType === 'documents-guide') {
+    // Special content for documents checklist page
+    const homeLoanDocs = LOAN_DOCS['home-loan'] || [];
+    extraContent = `
+<section class="info-section">
+    <h2>Home Loan Documents Checklist</h2>
+    <p>Having all documents ready before applying speeds up the approval process significantly. Here is the complete checklist organized by category.</p>
+
+    <h3>Identity & Address Proof</h3>
+    <ul class="documents-list">
+        <li>PAN Card (mandatory for all applicants)</li>
+        <li>Aadhaar Card (serves as both ID and address proof)</li>
+        <li>Passport / Voter ID / Driving License (additional ID proof)</li>
+        <li>Passport-size photographs (2-4 copies)</li>
+    </ul>
+
+    <h3>Income Documents (Salaried Applicants)</h3>
+    <ul class="documents-list">
+        <li>Salary Slips (last 3 months)</li>
+        <li>Bank Statements (last 6 months showing salary credits)</li>
+        <li>Form 16 / ITR (last 2 years)</li>
+        <li>Employment Proof / Offer Letter / Appointment Letter</li>
+        <li>Bonus / Incentive Letters (if claiming variable pay)</li>
+    </ul>
+
+    <h3>Income Documents (Self-Employed Applicants)</h3>
+    <ul class="documents-list">
+        <li>ITR with Computation of Income (last 3 years)</li>
+        <li>Balance Sheet & Profit and Loss Statement (last 3 years, audited)</li>
+        <li>Business Registration Certificate / GST Registration</li>
+        <li>Bank Statements (last 12 months)</li>
+        <li>Business Proof (Partnership Deed / MOA / AOA)</li>
+    </ul>
+
+    <h3>Property Documents</h3>
+    <ul class="documents-list">
+        <li>Sale Agreement / Allotment Letter</li>
+        <li>Title Deed / Conveyance Deed</li>
+        <li>Approved Building Plan from Municipal Authority</li>
+        <li>Occupancy Certificate (for ready properties)</li>
+        <li>Encumbrance Certificate (last 13-30 years)</li>
+        <li>Property Tax Receipts</li>
+        <li>NOC from Housing Society (for resale)</li>
+        <li>Builder-Buyer Agreement (for under-construction)</li>
+    </ul>
+
+    <h3>Additional Documents (If Applicable)</h3>
+    <ul class="documents-list">
+        <li>Existing Loan Statements (for balance transfer)</li>
+        <li>Co-applicant Documents (same set of ID, address, and income proof)</li>
+        <li>Power of Attorney (if applicable)</li>
+        <li>NRI Documents: NRE/NRO Bank Statements, Passport with Visa, Employment Contract Abroad</li>
+    </ul>
+
+    <h3>Bank-Wise Document Requirements</h3>
+    <p>While the core documents remain similar across banks, some have specific additional requirements:</p>
+</section>`;
+  }
+
+  const content = `
+<section class="page-hero">
+    <h1><span class="hl">${escapeHtml(heroTitle)}</span> in India ${YEAR}</h1>
+    <p>${escapeHtml(heroSub)}</p>
+    <div class="updated">Updated: ${new Date().toLocaleString('en-IN', { month: 'long', year: 'numeric' })}</div>
+</section>
+
+<!-- Ad: Below Hero -->
+<div style="max-width:1200px;margin:0 auto 24px;padding:0 24px;text-align:center;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8235932614579966" data-ad-slot="auto" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<section class="top-picks">
+    <h2 class="top-picks-title">Our Top Picks</h2>
+    <div class="picks-grid">
+        ${picksHTML}
+    </div>
+</section>
+
+<section class="comparison-section">
+    <h2>All ${escapeHtml(lt.label)} Options \u2014 Full Comparison</h2>
+    <p style="color:var(--text-muted);font-size:14px;margin-bottom:16px;">Sorted by ${sortBy === 'minIncome' ? 'minimum income requirement' : sortBy === 'minCreditScore' ? 'minimum credit score' : 'interest rate'} (lowest first). Eligibility based on \u20B950,000 monthly income.</p>
+    <div class="table-container">
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Bank</th>
+                    <th>Interest Rate</th>
+                    <th>Min Income</th>
+                    <th>Min CIBIL</th>
+                    <th>Eligible (\u20B950K)</th>
+                    <th>Processing Fee</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                ${tableRows}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+${extraContent}
+
+<section class="calc-cta">
+    <div class="calc-cta-box">
+        <h3>Check Your ${escapeHtml(lt.label)} Eligibility</h3>
+        <p>Know your exact eligible loan amount based on your income, existing EMIs, and credit profile.</p>
+        <a href="/${loanType}-eligibility" class="calc-cta-btn">Open Eligibility Calculator \u2192</a>
+    </div>
+</section>`;
+
+  // --- Internal links ---
+  const otherAffiliateLinks = affiliateData.pages
+    .filter(p => p.slug !== slug)
+    .map(p => ({
+      url: `/${p.slug}`,
+      label: p.heroTitle,
+      sub: p.loanType === loanType ? '' : (LOAN_TYPES[p.loanType] ? LOAN_TYPES[p.loanType].label : ''),
+    }));
+
+  const loanTypeLinks = Object.keys(LOAN_TYPES).map(lt2 => ({
+    url: `/${lt2}-eligibility`,
+    label: `${LOAN_TYPES[lt2].label} Eligibility`,
+  }));
+
+  const links =
+    linksGridHTML('More Comparisons', otherAffiliateLinks) +
+    linksGridHTML('Eligibility Calculators', loanTypeLinks);
+
+  // --- FAQ ---
+  const faqItems = faqs.map(f => `
+    <div class="faq-item">
+        <h3>${escapeHtml(f.q)}</h3>
+        <p>${escapeHtml(f.a)}</p>
+    </div>`).join('');
+
+  const faqSection = `
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    ${faqItems}
+</section>`;
+
+  // --- Disclaimer ---
+  const disclaimer = `
+<div class="disclaimer">
+    <div class="disclaimer-box">
+        <strong>Disclaimer:</strong> Interest rates, eligibility criteria, and loan details shown on this page are sourced from official bank websites and are for reference only. Actual rates and eligibility may vary based on your credit profile, income, loan amount, and bank's internal policies. We may earn a referral commission when you apply through links on this page, at no extra cost to you. This does not affect our rankings or recommendations. Last verified: ${new Date().toLocaleString('en-IN', { month: 'long', year: 'numeric' })}.
+    </div>
+</div>`;
+
+  // --- Breadcrumbs (Loan Batao uses {url, name} format) ---
+  const bcItems = [
+    { name: 'Home', url: '/' },
+    { name: heroTitle },
+  ];
+
+  const html = buildAffiliatePage({
+    title,
+    description,
+    keywords,
+    canonicalPath: slug,
+    breadcrumb: breadcrumbHTML(bcItems),
+    breadcrumbItems: bcItems,
+    content,
+    faqSection,
+    linksSection: links,
+    disclaimer,
+    jsonLd: faqSchemaJSON(faqs),
+  });
+
+  return { slug, html };
+}
+
 // ─── Sitemap & robots ────────────────────────────────────────────────────────
 
 function generateSitemap(allPages) {
@@ -1028,7 +1360,18 @@ for (const bank of banks) {
 }
 console.log(`  ✓ ${pageCount - blaStart} bank+loan+amount pages`);
 
-// 6. Sitemap & robots
+// 6. Affiliate comparison pages
+const affStart = pageCount;
+console.log('Generating affiliate comparison pages...');
+for (const page of affiliateData.pages) {
+  const result = generateAffiliatePage(page);
+  fs.writeFileSync(path.join(DIST, result.slug + '.html'), result.html);
+  allPages.push(result.slug);
+  pageCount++;
+}
+console.log(`  ✓ ${pageCount - affStart} affiliate pages`);
+
+// 7. Sitemap & robots
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'), generateSitemap(allPages));
 fs.writeFileSync(path.join(DIST, 'robots.txt'), generateRobotsTxt());
 
