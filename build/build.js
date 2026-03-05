@@ -1410,10 +1410,21 @@ if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true });
 ensureDir(DIST);
 
 // Copy static files
-['index.html', 'privacy.html', 'ads.txt'].forEach(file => {
+['index.html', 'privacy.html', 'ads.txt', '855619084ca64ac9afe95c0b2b58894d.txt'].forEach(file => {
   const src = path.join(ROOT, file);
   if (fs.existsSync(src)) fs.cpSync(src, path.join(DIST, file));
 });
+
+// ─── Copy blog posts to dist ───────────────────────────────────────────────
+const blogSrcDir = path.join(ROOT, 'blog');
+if (fs.existsSync(blogSrcDir)) {
+  const blogDistDir = path.join(DIST, 'blog');
+  fs.mkdirSync(blogDistDir, { recursive: true });
+  fs.readdirSync(blogSrcDir).forEach(f => {
+    fs.copyFileSync(path.join(blogSrcDir, f), path.join(blogDistDir, f));
+  });
+  console.log('📝 Copied ' + fs.readdirSync(blogSrcDir).length + ' blog pages to dist/blog/');
+}
 
 const allPages = [];
 let pageCount = 0;
@@ -1495,6 +1506,14 @@ for (const page of affiliateData.pages) {
 console.log(`  ✓ ${pageCount - affStart} affiliate pages`);
 
 // 7. Sitemap & robots
+// Add blog URLs to sitemap
+const blogDistCheck = path.join(DIST, 'blog');
+if (fs.existsSync(blogDistCheck)) {
+  fs.readdirSync(blogDistCheck).filter(f => f.endsWith('.html') && f !== 'index.html').forEach(f => {
+    allPages.push('blog/' + f.replace('.html', ''));
+  });
+}
+
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'), generateSitemap(allPages));
 fs.writeFileSync(path.join(DIST, 'robots.txt'), generateRobotsTxt());
 
