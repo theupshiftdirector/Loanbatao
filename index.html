@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loan Eligibility Calculator | Check How Much Loan You Can Get - Loan Batao</title>
     <meta name="description" content="Check your loan eligibility instantly. Free online calculator for Home Loan, Car Loan, Personal Loan & more. Find how much loan you can get based on your income.">
@@ -76,13 +77,13 @@
             --border: #2a2a2e;
             --text: #e8e8ec;
             --text-muted: #8a8a94;
-            --accent: #f97316;
-            --accent-dim: #f9731620;
+            --accent: #ff2d00;
+            --accent-dim: #ff2d0020;
             --green: #22c55e;
             --red: #ef4444;
             --input-bg: #1a1a1e;
             --blue: #38bdf8;
-            --orange: #f97316;
+            --orange: #ff2d00;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -367,7 +368,7 @@
 
 <header class="header">
     <div class="header-inner">
-        <div class="logo">Loan <span>Batao</span></div>
+        <div class="logo">Loan <span>Batao</span></div><span style="font-size:10px;color:var(--text-muted);margin-left:8px;font-weight:400">by <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">tuditools.com</a></span>
         <div class="badge">100% Free</div>
     </div>
 </header>
@@ -475,7 +476,7 @@
                 </div>
                 <div class="chart-legend">
                     <div class="legend-item">
-                        <div class="legend-dot" style="background:#f97316"></div>
+                        <div class="legend-dot" style="background:#ff2d00"></div>
                         <div class="legend-info">
                             <div class="legend-label">Existing EMIs</div>
                             <div class="legend-value" id="legendExisting">&#8377; 0</div>
@@ -483,7 +484,7 @@
                         <div class="legend-percent" id="legendExistingPct">0%</div>
                     </div>
                     <div class="legend-item">
-                        <div class="legend-dot" style="background:#f97316"></div>
+                        <div class="legend-dot" style="background:#ff2d00"></div>
                         <div class="legend-info">
                             <div class="legend-label">New Loan EMI</div>
                             <div class="legend-value" id="legendNewEMI">&#8377; 0</div>
@@ -611,6 +612,7 @@
             <a href="mailto:hi@tudinnovations.com" style="color:var(--accent);text-decoration:none">Contact</a>
         </div>
         <p style="font-size:11px;color:var(--text-muted)">&copy; 2026 TUDI. All rights reserved.</p>
+      <p style="font-size:10px;color:var(--text-muted);margin-top:4px">A <a href="https://gettudi.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">GETTUDI</a> product &mdash; <a href="https://gettudi.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">gettudi.com</a></p>
     </div>
 </footer>
 
@@ -680,7 +682,7 @@ function drawPieChart(existingEMIs, newEMI, remaining) {
     var total = existingEMIs + newEMI + remaining;
     if (total <= 0) return;
     var segments = [
-        { value: existingEMIs, color: '#f97316' },
+        { value: existingEMIs, color: '#ff2d00' },
         { value: newEMI, color: '#10b981' },
         { value: remaining, color: '#374151' }
     ];
@@ -784,6 +786,6 @@ document.getElementById('tenure').value = PRESETS.home.tenure;
 calculate();
 </script>
 
-<script src="https://api.hiretudi.com/widget/tudi.js" data-chatbot-id="a48b0e3b-1ce9-46d3-970e-03f3a9561997" data-color="#f97316" data-position="bottom-right" data-api-url="https://api.hiretudi.com"></script>
+<script src="https://api.hiretudi.com/widget/tudi.js" data-chatbot-id="a48b0e3b-1ce9-46d3-970e-03f3a9561997" data-color="#ff2d00" data-position="bottom-right" data-api-url="https://api.hiretudi.com"></script>
 </body>
 </html>
