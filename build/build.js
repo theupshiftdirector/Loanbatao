@@ -1420,10 +1420,22 @@ const blogSrcDir = path.join(ROOT, 'blog');
 if (fs.existsSync(blogSrcDir)) {
   const blogDistDir = path.join(DIST, 'blog');
   fs.mkdirSync(blogDistDir, { recursive: true });
+  let blogCount = 0;
   fs.readdirSync(blogSrcDir).forEach(f => {
-    fs.copyFileSync(path.join(blogSrcDir, f), path.join(blogDistDir, f));
+    const srcPath = path.join(blogSrcDir, f);
+    const destPath = path.join(blogDistDir, f);
+    if (fs.statSync(srcPath).isDirectory()) {
+      fs.mkdirSync(destPath, { recursive: true });
+      fs.readdirSync(srcPath).forEach(sub => {
+        fs.copyFileSync(path.join(srcPath, sub), path.join(destPath, sub));
+      });
+      blogCount++;
+    } else {
+      fs.copyFileSync(srcPath, destPath);
+      blogCount++;
+    }
   });
-  console.log('📝 Copied ' + fs.readdirSync(blogSrcDir).length + ' blog pages to dist/blog/');
+  console.log('📝 Copied ' + blogCount + ' blog pages to dist/blog/');
 }
 
 const allPages = [];
@@ -1509,8 +1521,13 @@ console.log(`  ✓ ${pageCount - affStart} affiliate pages`);
 // Add blog URLs to sitemap
 const blogDistCheck = path.join(DIST, 'blog');
 if (fs.existsSync(blogDistCheck)) {
-  fs.readdirSync(blogDistCheck).filter(f => f.endsWith('.html') && f !== 'index.html').forEach(f => {
-    allPages.push('blog/' + f.replace('.html', ''));
+  fs.readdirSync(blogDistCheck).forEach(f => {
+    const fullPath = path.join(blogDistCheck, f);
+    if (f.endsWith('.html') && f !== 'index.html') {
+      allPages.push('blog/' + f.replace('.html', ''));
+    } else if (fs.statSync(fullPath).isDirectory() && fs.existsSync(path.join(fullPath, 'index.html'))) {
+      allPages.push('blog/' + f);
+    }
   });
 }
 
