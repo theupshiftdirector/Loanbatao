@@ -26,7 +26,7 @@
     <meta name="twitter:description" content="Check your loan eligibility instantly. Find how much loan you can get based on your income.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8235932614579966" crossorigin="anonymous"></script>
     <script type="application/ld+json">
     {
@@ -79,25 +79,25 @@
     </script>
     <style>
         :root {
-            --bg: #0a0a0b;
-            --card: #141416;
-            --card-hover: #1a1a1e;
-            --border: #2a2a2e;
-            --text: #e8e8ec;
-            --text-muted: #8a8a94;
-            --accent: #ff2d00;
-            --accent-dim: #ff2d0020;
-            --green: #22c55e;
-            --red: #ef4444;
-            --input-bg: #1a1a1e;
+            --bg: #09090b;
+            --card: #18181b;
+            --card-hover: #27272a;
+            --border: #27272a;
+            --text: #fafafa;
+            --text-muted: #a1a1aa;
+            --accent: #f97316;
+            --accent-dim: #f9731620;
+            --green: #34d399;
+            --red: #f87171;
+            --input-bg: #27272a;
             --blue: #38bdf8;
-            --orange: #ff2d00;
+            --orange: #f97316;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             background: var(--bg);
             color: var(--text);
             line-height: 1.6;
@@ -122,7 +122,7 @@
             align-items: center;
         }
         .logo {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 24px;
             color: var(--text);
         }
@@ -143,7 +143,7 @@
             margin: 0 auto;
         }
         .hero h1 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 42px;
             line-height: 1.15;
             margin-bottom: 16px;
@@ -179,7 +179,7 @@
             border-radius: 8px;
             background: transparent;
             color: var(--text-muted);
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 13px;
             font-weight: 500;
             cursor: pointer;
@@ -204,7 +204,7 @@
             padding: 32px;
         }
         .panel-title {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 22px;
             margin-bottom: 24px;
             display: flex;
@@ -220,7 +220,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 14px;
             font-weight: 700;
         }
@@ -248,7 +248,7 @@
             border: 1px solid var(--border);
             border-radius: 10px;
             color: var(--text);
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 14px;
             transition: border-color 0.2s;
         }
@@ -261,7 +261,7 @@
         .tenure-row { display: flex; gap: 8px; }
         .tenure-row input { flex: 1; }
         .tenure-toggle { display: flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; flex-shrink: 0; }
-        .toggle-btn { padding: 10px 14px; background: transparent; border: none; color: var(--text-muted); font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .toggle-btn { padding: 10px 14px; background: transparent; border: none; color: var(--text-muted); font-family: 'Sora', system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
         .toggle-btn.active { background: var(--accent); color: #000; font-weight: 600; }
         .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
         .btn-calculate {
@@ -271,7 +271,7 @@
             color: #000;
             border: none;
             border-radius: 12px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: 'Sora', system-ui, -apple-system, sans-serif;
             font-size: 16px;
             font-weight: 700;
             cursor: pointer;
@@ -321,20 +321,20 @@
 
         /* Info & FAQ */
         .info-section { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
-        .info-section h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; margin-bottom: 16px; }
+        .info-section h2 { font-family: 'Sora', system-ui, -apple-system, sans-serif; font-size: 24px; margin-bottom: 16px; }
         .info-section p { color: var(--text-muted); margin-bottom: 16px; font-size: 15px; }
         .info-section ul { color: var(--text-muted); padding-left: 20px; margin-bottom: 16px; font-size: 15px; }
         .info-section li { margin-bottom: 6px; }
 
         .faq-section { max-width: 800px; margin: 0 auto; padding: 20px 24px 60px; }
-        .faq-section h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; margin-bottom: 16px; }
+        .faq-section h2 { font-family: 'Sora', system-ui, -apple-system, sans-serif; font-size: 24px; margin-bottom: 16px; }
         .faq-item { border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin-bottom: 12px; background: var(--card); }
         .faq-item h3 { font-size: 15px; margin-bottom: 8px; }
         .faq-item p { font-size: 14px; color: var(--text-muted); margin: 0; }
 
         /* Links */
         .links-section { max-width: 800px; margin: 0 auto; padding: 20px 24px 40px; }
-        .links-section h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 22px; margin-bottom: 16px; }
+        .links-section h2 { font-family: 'Sora', system-ui, -apple-system, sans-serif; font-size: 22px; margin-bottom: 16px; }
         .links-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 8px; }
         .links-grid a {
             display: block;
@@ -484,7 +484,7 @@
                 </div>
                 <div class="chart-legend">
                     <div class="legend-item">
-                        <div class="legend-dot" style="background:#ff2d00"></div>
+                        <div class="legend-dot" style="background:#f97316"></div>
                         <div class="legend-info">
                             <div class="legend-label">Existing EMIs</div>
                             <div class="legend-value" id="legendExisting">&#8377; 0</div>
@@ -492,7 +492,7 @@
                         <div class="legend-percent" id="legendExistingPct">0%</div>
                     </div>
                     <div class="legend-item">
-                        <div class="legend-dot" style="background:#ff2d00"></div>
+                        <div class="legend-dot" style="background:#f97316"></div>
                         <div class="legend-info">
                             <div class="legend-label">New Loan EMI</div>
                             <div class="legend-value" id="legendNewEMI">&#8377; 0</div>
@@ -619,8 +619,8 @@
             <a href="/privacy" style="color:var(--accent);text-decoration:none">Privacy Policy</a>
             <a href="mailto:hi@tudinnovations.com" style="color:var(--accent);text-decoration:none">Contact</a>
         </div>
-        <p style="font-size:11px;color:var(--text-muted)">&copy; 2026 TUDI. All rights reserved.</p>
-      <p style="font-size:10px;color:var(--text-muted);margin-top:4px">A <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">TudiTools</a> product &mdash; <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">tuditools.com</a></p>
+        <p style="font-size:11px;color:var(--text-muted)">&copy; 2026 TUD Innovations OPC Private Limited</p>
+      <p style="font-size:10px;color:var(--text-muted);margin-top:4px">A <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">TUDITOOLS</a> Product &vert; <a href="https://tuditools.com" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none">tuditools.com</a></p>
     </div>
 </footer>
 
@@ -690,7 +690,7 @@ function drawPieChart(existingEMIs, newEMI, remaining) {
     var total = existingEMIs + newEMI + remaining;
     if (total <= 0) return;
     var segments = [
-        { value: existingEMIs, color: '#ff2d00' },
+        { value: existingEMIs, color: '#f97316' },
         { value: newEMI, color: '#10b981' },
         { value: remaining, color: '#374151' }
     ];
@@ -794,6 +794,6 @@ document.getElementById('tenure').value = PRESETS.home.tenure;
 calculate();
 </script>
 
-<script src="https://api.tasukete.app/widget/tasukete.js" data-chatbot-id="a48b0e3b-1ce9-46d3-970e-03f3a9561997" data-color="#ff2d00" data-position="bottom-right" data-api-url="https://api.tasukete.app"></script>
+<script src="https://api.tasukete.app/widget/tasukete.js" data-chatbot-id="a48b0e3b-1ce9-46d3-970e-03f3a9561997" data-color="#f97316" data-position="bottom-right" data-api-url="https://api.tasukete.app"></script>
 </body>
 </html>
